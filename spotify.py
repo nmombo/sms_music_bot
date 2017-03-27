@@ -1,3 +1,11 @@
+# spotify.py
+# Module for the sms_music_bot.py app that interfaces with Spotify API's search
+
+# Author: Noah Momblanco
+#         http://github.com/nmombo/sms_music_bot
+
+# Wrtten on 3/28/2017 during MHacks 9 using guide at http://twilioinc.wpengine.com/2017/03/building-python-web-apps-with-flask.html
+
 import requests
 
 def get_track_url(song_title):

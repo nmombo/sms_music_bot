@@ -4,7 +4,7 @@
 # Author: Noah Momblanco
 #         http://github.com/nmombo/sms_music_bot
 
-# Wrtten on 3/28/2017 during MHakcs 9 using guide at http://twilioinc.wpengine.com/2017/03/building-python-web-apps-with-flask.html
+# Wrtten on 3/28/2017 during MHacks 9 using guide at http://twilioinc.wpengine.com/2017/03/building-python-web-apps-with-flask.html
 
 import spotify # import the spotify module we wrote
 from flask import Flask, request # import flask server and http request libraries
