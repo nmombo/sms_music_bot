@@ -14,7 +14,7 @@ from twilio.rest import TwilioRestClient # import Twilio's REST API
 import urllib
 
 # instantiate a Twilio REST API Client with my Twilio account credentials
-# note that the twilio token has been regenerated since comitting to the public github repository
+# note that the twilio token is hidden for security
 myTwilioSID = 'ACd7173182fbfbee0265e86f88929fb005'
 myTwilioToken = 'secret'
 client = TwilioRestClient(account=myTwilioSID, token=myTwilioToken) 
@@ -25,7 +25,8 @@ app = Flask(__name__)
 @app.route('/sms', methods=['POST'])
 def inbound_sms():
 	response = twiml.Response()
-	response.message('Thanks for texting Noah\'s SMS music bot! We\'re searching for your song now. '
+	response.message('Thanks for texting Noah\'s SMS music bot! '
+					 'We\'re searching for your song now. '
 					 'Please wait to receive a phone call.\n\n'
 					 'View source code at http://github.com/nmombo/sms_music_bot')
 
