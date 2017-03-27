@@ -4,7 +4,7 @@
 # Author: Noah Momblanco
 #         http://github.com/nmombo/sms_music_bot
 
-# Wrtten on 3/28/2017 during MHacks 9 using guide at http://twilioinc.wpengine.com/2017/03/building-python-web-apps-with-flask.html
+# Written on 3/28/2017 during MHacks 9 using guide at http://twilioinc.wpengine.com/2017/03/building-python-web-apps-with-flask.html
 
 import spotify # import the spotify module we wrote
 from flask import Flask, request # import flask server and http request libraries
@@ -24,7 +24,7 @@ app = Flask(__name__)
 @app.route('/sms', methods=['POST'])
 def inbound_sms():
 	response = twiml.Response()
-	response.message('Thanks for texting Noah\'s SMS music bot! We\'re Searching for your song now. '
+	response.message('Thanks for texting Noah\'s SMS music bot! We\'re searching for your song now. '
 					 'Please wait to receive a phone call.\n\nView source code at http://github.com/nmombo/sms_music_bot')
 
 	# Grab the song title from the body of the text message
