@@ -7,8 +7,8 @@
 # Written on 3/28/2017 during MHacks 9 using guide at
 # http://twilioinc.wpengine.com/2017/03/building-python-web-apps-with-flask.html
 
-import spotify # import the spotify module we wrote
-from flask import Flask, request # import flask server and http request libraries
+import spotif # import the spotify module we wrote
+from flask import Flask, request # flask server and http request libraries
 from twilio import twiml # the python twilio interface
 from twilio.rest import TwilioRestClient # import Twilio's REST API
 import urllib
